@@ -1,0 +1,18 @@
+﻿@model Casgem.ApiConsume.DTOs.CategoryDtos.UpdateCategoryDto
+
+@{
+    ViewData["Title"] = "UpdateCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Kategori Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <input type="text" class="form-control text-black" asp-for="CategoryName" />
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+    <a href="/Category/Index/" class="btn btn-warning">Değişikliklerden Vazgeç</a>
+</form>
+
