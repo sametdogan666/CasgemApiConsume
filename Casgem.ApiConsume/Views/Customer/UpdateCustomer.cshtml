@@ -1,0 +1,22 @@
+﻿@model Casgem.ApiConsume.DTOs.CustomerDtos.UpdateCustomerDto
+
+@{
+    ViewData["Title"] = "UpdateCustomer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Müşteri Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <input type="text" class="form-control text-black" asp-for="Name" />
+    <br />
+    <input type="text" class="form-control text-black" asp-for="City" />
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+    <a href="/Customer/Index/" class="btn btn-warning">Değişikliklerden Vazgeç</a>
+</form>
+
+
+

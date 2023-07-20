@@ -1,0 +1,22 @@
+﻿@model Casgem.ApiConsume.DTOs.CustomerDtos.CreateCustomerDto
+
+@{
+    ViewData["Title"] = "AddCustomer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Müşteri Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>Müşteri Adı</label>
+    <input asp-for="Name" class="form-control text-black" />
+    <br />
+    <label>Müşteri Şehri</label>
+    <input asp-for="City" class="form-control text-black" />
+    <br />
+    <button class="btn btn-info">Müşteriyi Kaydet</button>
+    <a href="/Customer/Index/" class="btn btn-secondary">Değişikliklerden Vazgeç</a>
+</form>
+
+
+
